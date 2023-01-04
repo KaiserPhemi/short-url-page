@@ -13,6 +13,7 @@
 .logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navbar_links {
@@ -28,6 +29,10 @@
   cursor: pointer;
 }
 
+.navbar_links_btn:hover {
+  color: var(--neutral-dark-violet);
+}
+
 .btn_wrapper {
   display: flex;
   justify-content: space-between;
@@ -41,9 +46,17 @@
   font-weight: 700;
 }
 
+.cta_btn:hover {
+  color: var(--neutral-dark-violet);
+}
+
 .cta_btn_signup {
   background: var(--primary-cyan);
   color: #fff;
   border-radius: 40px;
   padding: 0.5rem 1.5rem;
+}
+
+.cta_btn_signup:hover {
+  color: var(--neutral-violet);
 }
