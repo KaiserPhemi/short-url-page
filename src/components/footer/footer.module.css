@@ -1,4 +1,46 @@
 .main_footer {
+  display: flex;
+  background: var(--neutral-dark-violet);
+  color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 4rem 8rem;
+}
+
+.logo{
+}
+
+.logo img{
+  margin-top: 1rem;
+}
+
+.link_wrapper {
+  display: flex;
+  padding-left: 12rem;
+  padding-right: 4rem;
+}
+
+.link_section {
+  padding: 0 4rem;
+  color:var(--neutral-gray)
+}
+
+.link_section p:first-child {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  cursor:text;
+}
+
+.link_section p {
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.link_section p:hover {
+  color: #fff;
 }
 
 .attribution {
@@ -6,5 +48,6 @@
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
+  text-decoration: none;
 }
