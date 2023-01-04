@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_links_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  font-weight: 700;
+}
+
+.navbar_links {
+  display: flex;
+  padding: 0 2rem;
+}
+
+.navbar_links_btn {
+  padding: 0 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}

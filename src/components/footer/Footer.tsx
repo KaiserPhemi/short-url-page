@@ -24,7 +24,11 @@ const Footer = () => {
             Frontend Mentor
           </a>
           . Coded by{" "}
-          <a href="https://www.frontendmentor.io/profile/KaiserPhemi">
+          <a
+            href="https://www.frontendmentor.io/profile/KaiserPhemi"
+            target="_blank"
+            rel="noreferrer"
+          >
             Oluwafemi Akinwa
           </a>
           .
