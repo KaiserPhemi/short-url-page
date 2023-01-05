@@ -1,25 +1,26 @@
 // react libraries
-import React from "react";
+import React, { useState } from "react";
 
 // styles
 import styles from "./footer.module.css";
 
 // assets
 import logo from "../../assets/logo2.svg";
-import twitter from "../../assets/icon-twitter.svg";
-import facebook from "../../assets/icon-facebook.svg";
-import instagram from "../../assets/icon-instagram.svg";
-import pinterest from "../../assets/icon-pinterest.svg";
+
+// custom icons
+import { FaceBook, Twitter, Pinterest, Instagram } from "../../icons";
 
 // footer component
 const Footer = () => {
-  // list of icons
-  const footerLogos = [
-    { alt: "facebook", src: facebook },
-    { alt: "twitter", src: twitter },
-    { alt: "pinterest", src: pinterest },
-    { alt: "instagram", src: instagram },
-  ];
+  const [hover, setHover] = useState(false);
+
+  const handleMouseOver = (evt: any) => {
+    console.log("we here", evt.target.classList.value);
+  };
+
+  const handleMouseLeave = (evt: any) => {
+    console.log("we left", evt.target);
+  };
 
   return (
     <div className={styles.main_footer}>
@@ -49,9 +50,26 @@ const Footer = () => {
       </section>
       <section className={styles.socials}>
         <section className={styles.social_icons}>
-          {footerLogos.map((item: any, index: number) => (
-            <img key={index} src={item.src} alt={item.alt} />
-          ))}
+          <FaceBook
+            fill={`${hover ? "#2acfcf" : "#ffffff"}`}
+            onMouseOver={(evt: any) => handleMouseOver(evt)}
+            onMouseLeave={(evt: any) => handleMouseLeave(evt)}
+          />
+          <Twitter
+            fill={`${hover ? "#2acfcf" : "#ffffff"}`}
+            onMouseOver={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          />
+          <Pinterest
+            fill={`${hover ? "#2acfcf" : "#ffffff"}`}
+            onMouseOver={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          />
+          <Instagram
+            fill={`${hover ? "#2acfcf" : "#ffffff"}`}
+            onMouseOver={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          />
         </section>
         <section className={styles.attribution}>
           <p>

@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_text {
+  padding: 4rem 0;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--neutral-dark-violet);
+  margin: 0;
+  line-height: 6rem;
+}
+
+.description {
+  margin: 0;
+  color: var(--neutral-gray);
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.illustration {
+  margin-left: 6rem;
+}
+
+.cta_btn {
+  background: var(--primary-cyan);
+  color: #fff;
+  border-radius: 40px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cta_btn:hover {
+  color: var(--neutral-violet);
+}

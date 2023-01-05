@@ -28,8 +28,6 @@
   display: flex;
   flex-direction: column;
   padding: 0 4rem;
-  color: var(--neutral-gray);
-  /* font-size: 0.8rem; */
 }
 
 .link_section p:first-child {
@@ -40,14 +38,19 @@
   cursor: text;
 }
 
+.link_section p:first-child:hover {
+  color: #fff;
+}
+
 .link_section p {
+  color: var(--neutral-gray);
   white-space: nowrap;
   margin: 0.5rem 0;
   cursor: pointer;
 }
 
 .link_section p:hover {
-  color: #fff;
+  color: var(--primary-cyan);
 }
 
 .socials {
@@ -63,9 +66,13 @@
   padding: 0.5rem 0;
 }
 
-.social_icons img {
+.social_icons svg {
   padding-left: 2rem;
   cursor: pointer;
+}
+
+.social_icons img:hover {
+  color: var(--primary-cyan);
 }
 
 .attribution {
@@ -85,6 +92,6 @@
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: var(--primary-cyan);
   text-decoration: none;
 }
