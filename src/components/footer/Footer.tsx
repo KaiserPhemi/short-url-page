@@ -6,9 +6,21 @@ import styles from "./footer.module.css";
 
 // assets
 import logo from "../../assets/logo2.svg";
+import twitter from "../../assets/icon-twitter.svg";
+import facebook from "../../assets/icon-facebook.svg";
+import instagram from "../../assets/icon-instagram.svg";
+import pinterest from "../../assets/icon-pinterest.svg";
 
 // footer component
 const Footer = () => {
+  // list of icons
+  const footerLogos = [
+    { alt: "facebook", src: facebook },
+    { alt: "twitter", src: twitter },
+    { alt: "pinterest", src: pinterest },
+    { alt: "instagram", src: instagram },
+  ];
+
   return (
     <div className={styles.main_footer}>
       <section className={styles.logo}>
@@ -35,26 +47,35 @@ const Footer = () => {
           <p>Contact</p>
         </section>
       </section>
-      <section>Logos</section>
-      {/* <div className={styles.attribution}>
-        Challenge by{" "}
-        <a
-          href="https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Frontend Mentor
-        </a>
-        . Coded by{" "}
-        <a
-          href="https://www.frontendmentor.io/profile/KaiserPhemi"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Oluwafemi Akinwa
-        </a>
-        .
-      </div> */}
+      <section className={styles.socials}>
+        <section className={styles.social_icons}>
+          {footerLogos.map((item: any, index: number) => (
+            <img key={index} src={item.src} alt={item.alt} />
+          ))}
+        </section>
+        <section className={styles.attribution}>
+          <p>
+            {"Challenge by "}
+            <a
+              href="https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Frontend Mentor.
+            </a>
+          </p>
+          <p>
+            {"Coded by "}
+            <a
+              href="https://www.frontendmentor.io/profile/KaiserPhemi"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Oluwafemi Akinwa.
+            </a>
+          </p>
+        </section>
+      </section>
     </div>
   );
 };

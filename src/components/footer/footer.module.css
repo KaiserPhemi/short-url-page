@@ -1,5 +1,6 @@
 .main_footer {
   display: flex;
+  justify-content: space-between;
   background: var(--neutral-dark-violet);
   color: #fff;
   position: fixed;
@@ -9,11 +10,12 @@
   padding: 4rem 8rem;
 }
 
-.logo{
+.logo {
+  cursor: pointer;
 }
 
-.logo img{
-  margin-top: 1rem;
+.logo img {
+  margin-top: 0.5rem;
 }
 
 .link_wrapper {
@@ -23,18 +25,23 @@
 }
 
 .link_section {
+  display: flex;
+  flex-direction: column;
   padding: 0 4rem;
-  color:var(--neutral-gray)
+  color: var(--neutral-gray);
+  /* font-size: 0.8rem; */
 }
 
 .link_section p:first-child {
+  white-space: nowrap;
   color: #fff;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  cursor:text;
+  cursor: text;
 }
 
 .link_section p {
+  white-space: nowrap;
   margin: 0.5rem 0;
   cursor: pointer;
 }
@@ -43,10 +50,40 @@
   color: #fff;
 }
 
+.socials {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 0;
+}
+
+.social_icons img {
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
 .attribution {
-  font-size: 11px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.7rem;
   text-align: center;
 }
+
+.attribution p {
+  margin: 0;
+}
+
 .attribution a {
   color: #3e52a3;
   text-decoration: none;
