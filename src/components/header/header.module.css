@@ -37,5 +37,6 @@
 }
 
 .cta_btn:hover {
-  color: var(--neutral-violet);
+  background: var(--primary-light-cyan);
+  color: #fff;
 }

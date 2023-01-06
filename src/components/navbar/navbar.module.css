@@ -58,5 +58,7 @@
 }
 
 .cta_btn_signup:hover {
-  color: var(--neutral-violet);
+  background: var(--primary-light-cyan);
+  color: #fff;
+
 }

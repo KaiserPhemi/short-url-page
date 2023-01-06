@@ -1,0 +1,48 @@
+.wrapper {
+  min-height: 80vh;
+}
+
+.input_bar {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  border-radius: 10px;
+  background: var(--primary-violet) center/cover no-repeat
+    url("../../assets/bg-shorten-desktop.svg");
+}
+
+.input {
+  border: 0;
+  outline: none;
+  margin: 0 0.8rem;
+  width: 70%;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.input::placeholder {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--neutral-gray);
+}
+
+.cta_btn {
+  background: var(--primary-cyan);
+  border: 0;
+  outline: none;
+  margin: 0 0.8rem;
+  border-radius: 6px;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cta_btn:hover {
+  background: var(--primary-light-cyan);
+}
