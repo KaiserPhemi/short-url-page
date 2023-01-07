@@ -2,7 +2,7 @@
 import React from "react";
 
 // components
-import { Navbar, Header, Footer, Shortener } from "./components";
+import { Navbar, Header, Footer, Shortener, Landing } from "./components";
 
 // styles
 import styles from "./App.module.css";
@@ -15,6 +15,7 @@ const App = () => {
       <Header />
       <div className={styles.body}>
         <Shortener />
+        <Landing />
       </div>
       <Footer />
     </div>
