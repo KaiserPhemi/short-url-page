@@ -1,0 +1,34 @@
+.campaign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background: var(--primary-violet) center/cover no-repeat
+    url("../../assets/bg-boost-desktop.svg");
+}
+
+.caption {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.cta_btn {
+  background: var(--primary-cyan);
+  color: #fff;
+  border-radius: 40px;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cta_btn:hover {
+  background: var(--primary-light-cyan);
+  color: #fff;
+}

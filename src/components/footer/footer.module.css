@@ -3,11 +3,8 @@
   justify-content: space-between;
   background: var(--neutral-dark-violet);
   color: #fff;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
   padding: 4rem 8rem;
+  width: 100%;
 }
 
 .logo {

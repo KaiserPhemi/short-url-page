@@ -2,7 +2,14 @@
 import React from "react";
 
 // components
-import { Navbar, Header, Footer, Shortener, Landing } from "./components";
+import {
+  Navbar,
+  Header,
+  Footer,
+  Shortener,
+  Landing,
+  Campaign,
+} from "./components";
 
 // styles
 import styles from "./App.module.css";
@@ -13,10 +20,11 @@ const App = () => {
     <div className={styles.App}>
       <Navbar />
       <Header />
-      <div className={styles.body}>
+      <div className={styles.main_body}>
         <Shortener />
         <Landing />
       </div>
+      <Campaign />
       <Footer />
     </div>
   );
